@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Consolas, 'Courier New', monospace">
+  <rect width="1200" height="800" fill="#FAF6EF"/>
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="bold" fill="#B23A2E">=== 基础概念速查卡 ===</text>
+  <text x="600" y="78" text-anchor="middle" font-size="14" fill="#1F1B16">面试前 5 分钟扫一眼这张卡, 关键数字和取舍别张口就错</text>
+  <rect x="50" y="110" width="360" height="300" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70" y="140" font-size="18" font-weight="bold" fill="#B23A2E">┌─ CAP 定理 ─────────┐</text>
+  <text x="70" y="170" font-size="13" fill="#1F1B16">│ C 一致性: 所有节点同刻看到同值</text>
+  <text x="70" y="192" font-size="13" fill="#1F1B16">│ A 可用性: 每请求都有非错响应</text>
+  <text x="70" y="214" font-size="13" fill="#1F1B16">│ P 分区容忍: 网络分片仍运转</text>
+  <text x="70" y="246" font-size="13" fill="#1F1B16">│ 断网时: CP 拒服务保一致</text>
+  <text x="70" y="266" font-size="13" fill="#1F1B16">│         AP 保可用但可能旧值</text>
+  <text x="70" y="298" font-size="13" fill="#B23A2E">│ 业务选 AP+最终一致; 钱选 CP</text>
+  <text x="70" y="328" font-size="13" fill="#1F1B16">│ CP: ZooKeeper/etcd/HBase</text>
+  <text x="70" y="348" font-size="13" fill="#1F1B16">│ AP: Cassandra/DynamoDB/DNS</text>
+  <text x="70" y="385" font-size="12" fill="#1F1B16">└────────────────────┘</text>
+  <rect x="420" y="110" width="360" height="300" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="440" y="140" font-size="18" font-weight="bold" fill="#B23A2E">┌─ 缓存三大问题 ──────┐</text>
+  <text x="440" y="170" font-size="13" fill="#1F1B16">│ 穿透: 查不存在的数据</text>
+  <text x="440" y="190" font-size="13" fill="#B23A2E">│   -> 布隆过滤器 + 空值缓存</text>
+  <text x="440" y="216" font-size="13" fill="#1F1B16">│ 击穿: 热点 key 同时过期</text>
+  <text x="440" y="236" font-size="13" fill="#B23A2E">│   -> 互斥锁回填 + 热点不过期</text>
+  <text x="440" y="262" font-size="13" fill="#1F1B16">│ 雪崩: 大量 key 同时失效</text>
+  <text x="440" y="282" font-size="13" fill="#B23A2E">│   -> TTL 加随机抖动 + 多级缓存</text>
+  <text x="440" y="312" font-size="13" fill="#1F1B16">│ 写路径: 先更库 再删缓存</text>
+  <text x="440" y="334" font-size="13" fill="#1F1B16">│ 删失败 -> MQ 重试 + 延迟双删</text>
+  <text x="440" y="364" font-size="13" fill="#1F1B16">│ 命中率: >95% 才算加到位</text>
+  <text x="440" y="388" font-size="12" fill="#1F1B16">└────────────────────┘</text>
+  <rect x="790" y="110" width="360" height="300" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="810" y="140" font-size="18" font-weight="bold" fill="#B23A2E">┌─ 消息队列 ─────────┐</text>
+  <text x="810" y="170" font-size="13" fill="#1F1B16">│ 三大作用:</text>
+  <text x="810" y="190" font-size="13" fill="#1F1B16">│  解耦 / 异步 / 削峰</text>
+  <text x="810" y="218" font-size="13" fill="#1F1B16">│ 选型:</text>
+  <text x="810" y="238" font-size="13" fill="#1F1B16">│  Kafka  高吞吐日志/大数据</text>
+  <text x="810" y="258" font-size="13" fill="#1F1B16">│  RocketMQ 事务/顺序消息</text>
+  <text x="810" y="278" font-size="13" fill="#1F1B16">│  RabbitMQ 路由灵活/延迟队列</text>
+  <text x="810" y="308" font-size="13" fill="#B23A2E">│  投递语义: 至少一次 (主流)</text>
+  <text x="810" y="328" font-size="13" fill="#B23A2E">│  -> 消费端必须业务幂等</text>
+  <text x="810" y="358" font-size="13" fill="#1F1B16">│  顺序: 同 key 路由同队列</text>
+  <text x="810" y="388" font-size="12" fill="#1F1B16">└────────────────────┘</text>
+  <rect x="50" y="430" width="360" height="300" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70" y="460" font-size="18" font-weight="bold" fill="#B23A2E">┌─ 限流算法 ─────────┐</text>
+  <text x="70" y="490" font-size="13" fill="#1F1B16">│ 固定窗口: 简单, 临界 2x 突刺</text>
+  <text x="70" y="512" font-size="13" fill="#1F1B16">│ 滑动窗口: 切小格滑动统计</text>
+  <text x="70" y="534" font-size="13" fill="#1F1B16">│ 漏桶: 固定速率漏出, 平滑</text>
+  <text x="70" y="556" font-size="13" fill="#B23A2E">│ 令牌桶: 允许突发 (主流)</text>
+  <text x="70" y="586" font-size="13" fill="#1F1B16">│ 分布式: Redis + Lua 原子</text>
+  <text x="70" y="608" font-size="13" fill="#1F1B16">│ 维度: 用户/IP/接口/租户</text>
+  <text x="70" y="630" font-size="13" fill="#1F1B16">│ 被限: 429 + Retry-After</text>
+  <text x="70" y="660" font-size="13" fill="#B23A2E">│ 限流 vs 熔断:</text>
+  <text x="70" y="680" font-size="13" fill="#1F1B16">│  限流挡入口; 熔断断下游</text>
+  <text x="70" y="708" font-size="12" fill="#1F1B16">└────────────────────┘</text>
+  <rect x="420" y="430" width="360" height="300" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="440" y="460" font-size="18" font-weight="bold" fill="#B23A2E">┌─ 一致性谱系 ────────┐</text>
+  <text x="440" y="490" font-size="13" fill="#1F1B16">│ 强一致 (线性): 钱/库存</text>
+  <text x="440" y="512" font-size="13" fill="#1F1B16">│ 读己之写: 用户自己的操作</text>
+  <text x="440" y="534" font-size="13" fill="#1F1B16">│ 单调读: 不读到更旧值</text>
+  <text x="440" y="556" font-size="13" fill="#B23A2E">│ 最终一致: 社交/内容 (主流)</text>
+  <text x="440" y="586" font-size="13" fill="#1F1B16">│ 选型口诀:</text>
+  <text x="440" y="606" font-size="13" fill="#1F1B16">│  错了不能忍 -> 强一致</text>
+  <text x="440" y="626" font-size="13" fill="#1F1B16">│  秒级延迟可忍 -> 最终一致</text>
+  <text x="440" y="656" font-size="13" fill="#1F1B16">│ 幂等: 同请求 N 次同效</text>
+  <text x="440" y="678" font-size="13" fill="#1F1B16">│  重试必须配幂等键</text>
+  <text x="440" y="708" font-size="12" fill="#1F1B16">└────────────────────┘</text>
+  <rect x="790" y="430" width="360" height="300" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="810" y="460" font-size="18" font-weight="bold" fill="#B23A2E">┌─ 单机量级 ─────────┐</text>
+  <text x="810" y="490" font-size="13" fill="#1F1B16">│ MySQL 点读:  5k-15k QPS</text>
+  <text x="810" y="512" font-size="13" fill="#1F1B16">│ MySQL 写:    1k-5k TPS</text>
+  <text x="810" y="534" font-size="13" fill="#1F1B16">│ Redis:       10w-100w QPS</text>
+  <text x="810" y="556" font-size="13" fill="#1F1B16">│ Kafka:       百万条/秒</text>
+  <text x="810" y="578" font-size="13" fill="#1F1B16">│ ES:          几百-几千 QPS</text>
+  <text x="810" y="600" font-size="13" fill="#1F1B16">│ 网卡:        1Gbps ~ 125MB/s</text>
+  <text x="810" y="628" font-size="13" fill="#B23A2E">│ SLA 年宕机:</text>
+  <text x="810" y="648" font-size="13" fill="#1F1B16">│  3个9 = 8.7h  4个9 = 52min</text>
+  <text x="810" y="668" font-size="13" fill="#1F1B16">│  5个9 = 5min</text>
+  <text x="810" y="696" font-size="12" fill="#1F1B16">└────────────────────┘</text>
+</svg>

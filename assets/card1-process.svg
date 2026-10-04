@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Consolas, 'Courier New', monospace">
+  <rect width="1200" height="760" fill="#FAF6EF"/>
+  <text x="600" y="55" text-anchor="middle" font-size="26" font-weight="bold" fill="#B23A2E">=== 系统设计面试 · 五步设计流程 ===</text>
+  <text x="600" y="85" text-anchor="middle" font-size="14" fill="#1F1B16">边说边画，不要闷头想；每一步都向面试官暴露你的思考过程</text>
+  <text x="60" y="150" font-size="17" fill="#1F1B16" xml:space="preserve">┌────────────┐    ┌────────────┐    ┌────────────┐    ┌────────────┐    ┌────────────┐</text>
+  <text x="60" y="178" font-size="17" fill="#B23A2E" font-weight="bold" xml:space="preserve">│  1.需求澄清  │ -> │  2.规模估算  │ -> │  3.高层设计  │ -> │  4.细节设计  │ -> │  5.权衡答辩  │</text>
+  <text x="60" y="206" font-size="17" fill="#1F1B16" xml:space="preserve">└────────────┘    └────────────┘    └────────────┘    └────────────┘    └────────────┘</text>
+  <text x="72"  y="245" font-size="13" fill="#1F1B16">功能/非功能</text>
+  <text x="72"  y="263" font-size="13" fill="#1F1B16">规模假设</text>
+  <text x="292" y="245" font-size="13" fill="#1F1B16">QPS/存储/带宽</text>
+  <text x="292" y="263" font-size="13" fill="#1F1B16">粗算即可</text>
+  <text x="512" y="245" font-size="13" fill="#1F1B16">API+数据模型</text>
+  <text x="512" y="263" font-size="13" fill="#1F1B16">+组件图</text>
+  <text x="732" y="245" font-size="13" fill="#1F1B16">面试官挑点</text>
+  <text x="732" y="263" font-size="13" fill="#1F1B16">深挖细节</text>
+  <text x="952" y="245" font-size="13" fill="#1F1B16">主动说取舍</text>
+  <text x="952" y="263" font-size="13" fill="#1F1B16">回应追问</text>
+  <rect x="60" y="300" width="1080" height="90" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="80" y="328" font-size="15" font-weight="bold" fill="#B23A2E">时间分配（90 分钟面试）</text>
+  <text x="80" y="355" font-size="14" fill="#1F1B16">  需求澄清 5min  →  估算 5min  →  高层 15min  →  细节 40min  →  答辩 25min</text>
+  <text x="80" y="377" font-size="13" fill="#1F1B16">  别一上来就画图；别自顾自画 20 分钟；每画一个组件问一句「您想让我深入哪里？」</text>
+  <rect x="60" y="410" width="1080" height="180" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="80" y="438" font-size="15" font-weight="bold" fill="#B23A2E">五条心法</text>
+  <text x="80" y="466" font-size="14" fill="#1F1B16">  [1] 边想边说：沉默 = 面试官不知道你在干嘛，把思考过程念出来。</text>
+  <text x="80" y="490" font-size="14" fill="#1F1B16">  [2] 先承认不知道：硬编比坦白更扣分；「这块我没深入做过，但我会这样排查……」</text>
+  <text x="80" y="514" font-size="14" fill="#1F1B16">  [3] 主动暴露权衡：「我选 A 是因为……代价是……」比只说「我选 A」高一个档次。</text>
+  <text x="80" y="538" font-size="14" fill="#1F1B16">  [4] 结尾 30 秒总结：把整个架构串一遍，让面试官听到完整闭环。</text>
+  <text x="80" y="562" font-size="14" fill="#1F1B16">  [5] 需求不清就设计 = 沙地上盖楼；先问功能/非功能/规模三件套。</text>
+  <text x="600" y="640" text-anchor="middle" font-size="13" fill="#B23A2E">── system-design-zh · 基础篇配套图 ──</text>
+  <text x="600" y="665" text-anchor="middle" font-size="12" fill="#1F1B16">源自 ~360K 星 system-design-primer 结构参考 · 正文原创中文撰写</text>
+</svg>

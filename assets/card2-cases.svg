@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="Consolas, 'Courier New', monospace">
+  <rect width="1200" height="820" fill="#FAF6EF"/>
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="bold" fill="#B23A2E">=== 经典案例总览 · 10 个高频面试题 ===</text>
+  <text x="600" y="78" text-anchor="middle" font-size="14" fill="#1F1B16">每个案例按 需求→估算→高层→细节→权衡→追问 六段式展开</text>
+  <rect x="50"  y="110" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70"  y="140" font-size="16" font-weight="bold" fill="#B23A2E">[03] URL 短链</text>
+  <text x="70"  y="165" font-size="13" fill="#1F1B16">考点: 发号器 / base62 / 缓存 / 302 vs 301</text>
+  <text x="70"  y="187" font-size="13" fill="#1F1B16">重点: 读远多于写, Redis 挡读, 异步统计点击</text>
+  <text x="70"  y="209" font-size="13" fill="#1F1B16">追问: 短码碰撞? 发号器单点? 热点 key 击穿?</text>
+  <rect x="620" y="110" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="640" y="140" font-size="16" font-weight="bold" fill="#B23A2E">[04] 网页爬虫</text>
+  <text x="640" y="165" font-size="13" fill="#1F1B16">考点: URL 去重 / 布隆过滤器 / 站点限速</text>
+  <text x="640" y="187" font-size="13" fill="#1F1B16">重点: 按域名分组调度, 原始页存对象存储</text>
+  <text x="640" y="209" font-size="13" fill="#1F1B16">追问: 反爬? 重复抓? 周期性重抓怎么做?</text>
+  <rect x="50"  y="245" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70"  y="275" font-size="16" font-weight="bold" fill="#B23A2E">[05] 新闻 Feed 流</text>
+  <text x="70"  y="300" font-size="13" fill="#1F1B16">考点: 推/拉模式 / 扇出 / inbox</text>
+  <text x="70"  y="322" font-size="13" fill="#1F1B16">重点: 普通用户推, 大 V 拉, 混合模式</text>
+  <text x="70"  y="344" font-size="13" fill="#1F1B16">追问: Redis 挂了? 新关注补历史? 大 V 写放大?</text>
+  <rect x="620" y="245" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="640" y="275" font-size="16" font-weight="bold" fill="#B23A2E">[06] 聊天系统</text>
+  <text x="640" y="300" font-size="13" fill="#1F1B16">考点: 长连接 / 消息路由 / 不丢不重不乱序</text>
+  <text x="640" y="322" font-size="13" fill="#1F1B16">重点: WebSocket + 一致性哈希 + seq_id</text>
+  <text x="640" y="344" font-size="13" fill="#1F1B16">追问: 离线消息? 大群扇出? 多端同步?</text>
+  <rect x="50"  y="380" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70"  y="410" font-size="16" font-weight="bold" fill="#B23A2E">[07] 在线支付</text>
+  <text x="70"  y="435" font-size="13" fill="#1F1B16">考点: 幂等 / 状态机 / 对账 / 回调兜底</text>
+  <text x="70"  y="457" font-size="13" fill="#1F1B16">重点: 钱不能错, 被动回调 + 主动查单单保险</text>
+  <text x="70"  y="479" font-size="13" fill="#1F1B16">追问: 重复回调? 退款幂等? 渠道宕机?</text>
+  <rect x="620" y="380" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="640" y="410" font-size="16" font-weight="bold" fill="#B23A2E">[08] 电商购物车</text>
+  <text x="640" y="435" font-size="13" fill="#1F1B16">考点: Redis 热存 / 登录合并 / 价格实时</text>
+  <text x="640" y="457" font-size="13" fill="#1F1B16">重点: 购物车不存价格, 结算时实时查商品中心</text>
+  <text x="640" y="479" font-size="13" fill="#1F1B16">追问: 多端同步? 商品下架? 超卖怎么防?</text>
+  <rect x="50"  y="515" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70"  y="545" font-size="16" font-weight="bold" fill="#B23A2E">[09] 搜索系统</text>
+  <text x="70"  y="570" font-size="13" fill="#1F1B16">考点: 倒排索引 / ES / 近实时写入</text>
+  <text x="70"  y="592" font-size="13" fill="#1F1B16">重点: Binlog 同步, 分片+副本, BM25 排序</text>
+  <text x="70"  y="614" font-size="13" fill="#1F1B16">追问: 慢查询优化? 索引重建? 同义词?</text>
+  <rect x="620" y="515" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="640" y="545" font-size="16" font-weight="bold" fill="#B23A2E">[10] 推荐系统</text>
+  <text x="640" y="570" font-size="13" fill="#1F1B16">考点: 召回+精排 / 向量检索 / 冷启动</text>
+  <text x="640" y="592" font-size="13" fill="#1F1B16">重点: 多路召回 -> 粗排 -> 精排 -> 重排</text>
+  <text x="640" y="614" font-size="13" fill="#1F1B16">追问: 实时反馈? 探索利用? A/B 实验?</text>
+  <rect x="50"  y="650" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="70"  y="680" font-size="16" font-weight="bold" fill="#B23A2E">[11] 日志监控</text>
+  <text x="70"  y="705" font-size="13" fill="#1F1B16">考点: 采集 / 冷热分层 / 告警分级</text>
+  <text x="70"  y="727" font-size="13" fill="#1F1B16">重点: Kafka 缓冲, ES 热查, 冷数据转对象存储</text>
+  <text x="70"  y="749" font-size="13" fill="#1F1B16">追问: trace_id 串联? 告警风暴? 采样?</text>
+  <rect x="620" y="650" width="530" height="120" fill="none" stroke="#B23A2E" stroke-width="2"/>
+  <text x="640" y="680" font-size="16" font-weight="bold" fill="#B23A2E">[12] 限流网关</text>
+  <text x="640" y="705" font-size="13" fill="#1F1B16">考点: 令牌桶 / Redis+Lua / 多级限流</text>
+  <text x="640" y="727" font-size="13" fill="#1F1B16">重点: 本机限流兜底 + 全局限额, fail-open</text>
+  <text x="640" y="749" font-size="13" fill="#1F1B16">追问: 临界突刺? Redis 挂了? 阈值怎么定?</text>
+</svg>
