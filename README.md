@@ -12,6 +12,8 @@
 
 ---
 
+⭐ 如果对你有帮助，点个 Star 支持中文开源
+
 ## 这是什么
 
 这是一份面向中文工程师的**系统设计面试自学手册**。它参考了 GitHub 上知名开源项目 [`donnemartin/system-design-primer`](https://github.com/donnemartin/system-design-primer)（约 36 万星）的**结构思路**——把面试要准备的内容拆成「基础概念 / 设计流程 / 经典案例 / 规模估算」四块——但**全部正文为原创中文撰写**，没有翻译原文，也没有直接搬运任何句子。
@@ -84,3 +86,16 @@
 **如果这份手册帮你拿到了 offer，欢迎回来看一眼，给个 Star 告诉作者一声。**
 
 </div>
+
+
+## 姊妹项目
+
+中文开源矩阵，一网打尽开发者的知识库：
+
+- [zhskills · 中文技能库](https://github.com/zieang88888/zhskills)
+- [awesome-ai-tools-zh · AI 工具导航](https://github.com/zieang88888/awesome-ai-tools-zh)
+- [free-programming-books-zh · 编程书籍大全](https://github.com/zieang88888/free-programming-books-zh)
+- [awesome-python-zh · Python 生态导航](https://github.com/zieang88888/awesome-python-zh)
+- [ohmyzsh-zh · 终端效率神器](https://github.com/zieang88888/ohmyzsh-zh)
+- [llm-course-zh · LLM 课程导航](https://github.com/zieang88888/llm-course-zh)
+- [design-resources-for-developers-zh · 设计资源大全](https://github.com/zieang88888/design-resources-for-developers-zh)
